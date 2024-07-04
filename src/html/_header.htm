@@ -1,5 +1,28 @@
 <header class="header">
 	<div class="header__container">
-
+		<a href="#" class="header__logo">LOGO </a>
+		<div class="header__menu menu">
+			<button type="button" class="menu__icon icon-menu"><span></span></button>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="" class="menu__link">Наша команда</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Політика конфіденційності</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Рекомендовані сервіси</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+				</ul>
+				<form class="header__search-form" action="/search" method="get">
+					<!-- <label for="search">Поиск:</label> -->
+					<input class="header__search" type="search" id="search" name="search" placeholder="Search...">
+					<button type="submit">search</button>
+				  </form>
+				
+				<select name="form[]" class="header__select-lang lang" data-class-modif="form">
+					<option value="ua" selected> <div class="lang__img-wrapp"><img src="@img/ua.png" alt="Image" ></div> Пункт №1</option>
+					<option value="en"><img src="@img/ua.png" alt="Image">Пункт №2</option>
+					
+				</select>
+				
+			</nav>
+		</div>
 	</div>
 </header>

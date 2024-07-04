@@ -1,0 +1,66 @@
+.header {
+
+    &__container {
+        padding-top: toRem(12);
+        padding-bottom: toRem(12);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: toRem(26);
+    }
+
+    &__menu {
+    }
+
+    &__search-form {
+        display: flex;
+    }
+
+    &__search {
+    }
+
+    &__select-lang {
+    }
+}
+.menu {
+   
+
+    &__icon {
+    }
+
+    &__body { display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.icon-menu {
+}
+.lang {
+ .select__body{
+    color: red;
+    width: 200px;
+ }
+    
+    option {
+        padding-left: 30px; /* Отступ для изображения */
+        background-repeat: no-repeat;
+        background-position: left center;
+        background: #000;
+   
+}}
