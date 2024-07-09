@@ -1,3 +1,47 @@
 //====================================================================================================
+.footer {
+
+    &__container {
+        padding-top: toRem(30);
+        padding-bottom: toRem(30);
+        padding-right: toRem(20);
+        padding-left: toRem(20);
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--color);
+    }
+
+    &__logo {
+        font-size: toRem(60);
+    }
+
+    &__menu {
+    }
+}
+
+.menu-footer {
+// display: flex;
+    &__icon {}
+
+    &__body {}
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        // justify-content: space-between;
+    }
+
+    &__item {}
+
+    &__link {
+        font-weight: 400;
+    }
+}
+
+.icon-menu {}
+
+.link-10 {}
 
 //====================================================================================================
