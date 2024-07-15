@@ -11,7 +11,7 @@
     --color-label: #bd853d;
 
     --color-Lighting: rgba(222, 177, 80, 0.78);
-    --color-Lighting-0: rgba(222, 177, 80, 0.03);
+    --color-Lighting-0: rgba(222, 188, 134, 0.073);;
 
     --text-color: #191818;
     --text-color-h: #be8539;
@@ -25,7 +25,7 @@ html.dark{
     --color-3: #065779;
     --color-label: #5b7596;
     --color-Lighting: rgba(51, 64, 212, 0.78);
-    --color-Lighting-0: rgba(222, 177, 80, 0.03);
+    --color-Lighting-0: rgba(6, 87, 121, 0.018);
 
     --text-color: #d2e3e8;
     --text-color-h: #b67d34;
@@ -54,6 +54,8 @@ html.dark{
 }
 
 .title {
+    position: relative;
+    z-index: 50;
     font-family: "Bebas Neue";
     font-size: toRem(46);
     line-height: 96%;
@@ -201,29 +203,33 @@ html.dark{
     -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
-    -webkit-transition: all 0.8s ease 0s;
-    -o-transition: all 0.8s ease 0s;
-    transition: all 0.8s ease 0s;
+    
+    transition: all 0.2s ease 0s;
     text-decoration: none;
     position: relative;
 }
 
 .btn-35:hover {
     border-radius: 10px;
-    transition: all 0.8s ease 0.2s;
-    -webkit-transition: all 0.8s ease 0.2s;
-    -moz-transition: all 0.8s ease 0.2s;
-    -moz-transition: all 0.8s ease 0.2s;
-    -o-transition: all 0.8s ease 0.2s;
-    -webkit-box-shadow: 0 0 40px var(--color-Lighting);
+    transition: all 0.2s ease 0s;
+
     box-shadow: 0 0 40px var(--color-Lighting);
-    -moz-box-shadow: 0 0 40px var(--color-Lighting);
+   
 }
 
 .btn-35:hover .btn-35__waves {
     top: -50px;
 }
-
+.btn-35:active .btn-35__waves {
+    top: 50px;
+}
+.btn-35:active {
+    border-radius: 10px;
+    transition: all 0.2s ease 0s;
+   
+    box-shadow: 0 0 10px var(--color-Lighting);
+    
+}
 .btn-35__text {
 
 

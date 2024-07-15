@@ -2,6 +2,7 @@
 .footer {
 
     &__container {
+        position: relative;
         padding-top: toRem(30);
         padding-bottom: toRem(30);
         padding-right: toRem(20);
@@ -15,6 +16,9 @@
 
     &__logo {
         font-size: toRem(60);
+        @media (max-width:$mobile){
+             font-size: toRem(30); 
+        }
     }
 
     &__menu {
@@ -30,13 +34,24 @@
     &__list {
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
         // justify-content: space-between;
+        @media (max-width:$tablet){
+            gap: 16px;
+        }
+        @media (max-width:$mobile){
+             gap: 10px; 
+        }
     }
 
-    &__item {}
+    &__item {
+        
+    }
 
     &__link {
-        font-weight: 400;
+        font-size: toRem(18);
+        font-weight: 600;
+        // text-align: center;
     }
 }
 

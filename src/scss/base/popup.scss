@@ -34,7 +34,7 @@ body::after {
 .popup_show .popup__content {
 	visibility: visible;
 	transform: scale(1);
-}
+background: var(--body-bg);}
 .popup__wrapper {
 	display: flex;
 	flex-direction: column;
@@ -55,7 +55,47 @@ body::after {
 	width: 100%;
 	max-width: 900px;
 	border-radius: 20px;
+	text-align: right;
 	.lock & {
 		visibility: visible;
+	}
+}
+
+
+.popup {
+&__close{
+	
+}
+	&__block {
+		text-align: center;
+		
+		
+	}
+
+	&__title {
+		font-size: toRem(36);
+		color: var(--text-color-h);
+		margin-bottom: toRem(20);
+		font-weight: 600;
+	}
+
+	&__text {border: 1px solid var(--color-2) ;
+		padding: toRem(20) ;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		font-size: toRem(18);
+		span{
+			display: block;
+			height: 1px;
+			background: var(--color-2);
+			width: 80%;
+			margin: 0 auto;
+		}
+		a{
+			color: var(--color-2);
+			font-weight: 500;
+			font-size: toRem(22);
+		}
 	}
 }

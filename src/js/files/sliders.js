@@ -41,6 +41,8 @@ function initSliders() {
 			//autoHeight: true,
 			speed: 800,
 // centeredSlides: true,
+// initialSlide: 1,
+
 			//touchRatio: 0,
 			//simulateTouch: false,
 			//loop: true,
@@ -73,16 +75,16 @@ function initSliders() {
 			*/
 
 			// Кнопки "вліво/вправо"
-			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
-			},
+			// navigation: {
+			// 	prevEl: '.swiper-button-prev',
+			// 	nextEl: '.swiper-button-next',
+			// },
 			
 			// Брейкпоінти
 			breakpoints: {
 				540: {
 					slidesPerView: 2,
-					spaceBetween: 0,
+					spaceBetween: 20,
 					autoHeight: true,
 					loop: true,
 				},

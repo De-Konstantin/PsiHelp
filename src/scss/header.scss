@@ -1,7 +1,20 @@
 .header {
     position: relative;
     background: var(--color);
-    z-index: 50;
+    z-index: 51;
+
+    &._header-scroll{
+        position: fixed;
+        top: -200%;
+        width: 100%;
+
+    }
+
+    &._header-show{
+        transition: top 0.3s ease 0s;
+        top: 0;
+    }
+
 
     &__container {
         padding-top: toRem(16);
@@ -14,6 +27,8 @@
 
     &__logo {
         font-size: toRem(26);
+        position: relative;
+        z-index: 56;
     }
 
     &__menu {}
@@ -32,7 +47,7 @@
         border-radius: 30px;
         position: relative;
         cursor: pointer;
-
+z-index: 56;
         &::after {
             content: url("@img/header/sun.svg");
             /* Add in the image. You could also add an icon by the using the icon's unicode (sites like fontawesome.com provide this). */
@@ -60,19 +75,30 @@
 .menu {
 
 
-    &__icon {}
+    &__icon {position: relative;
+    z-index: 56;}
 
     &__body {
         display: flex;
         align-items: center;
         gap: 10px;
-
+@media (max-width:$mobile){
+    z-index: 55;
+     background: var(--body-bg);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: toRem(90);
+}
     }
 
     &__list {
         display: flex;
         align-items: center;
         gap: 15px;
+        @media (max-width:$mobile){
+             flex-direction: column;
+
+        }
     }
 
     &__item {}
@@ -80,6 +106,9 @@
     &__link {
         font-size: toRem(18);
         font-weight: 600;
+        @media (max-width:$mobile){
+             font-size: toRem(32); 
+        }
     }
 }
 
@@ -95,7 +124,11 @@
     /* Since the width of the button is 90px and the pseudo element is 40px we translate by a number that adds up to 90. So we translate to the right by 50px ( 40 + 50 = 90 width of the button). We also rotate this element by 360 degrees. */
 }
 
-.icon-menu {}
+.icon-menu {
+    span{background-color: var(--text-color)}
+    &::after{background-color: var(--text-color)}
+    &::before{background-color:var(--text-color)}
+}
 
 
 
