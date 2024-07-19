@@ -1,7 +1,7 @@
 .header {
     position: relative;
     background: var(--color);
-    z-index: 51;
+    z-index: 53;
 
     &._header-scroll{
         position: fixed;
@@ -26,11 +26,24 @@
     }
 
     &__logo {
-        font-size: toRem(26);
+        font-family:  "Pacifico";
+
+        font-size: toRem(16);
+        
         position: relative;
         z-index: 56;
+        display: flex;
+        align-items: center;
+gap: 6px;
+line-height: 1.1;
+        
     }
-
+&__logo-img{
+    max-width: toRem(45);
+    img{
+        width: 100%;
+    }
+}
     &__menu {}
 
     &__search-form {}

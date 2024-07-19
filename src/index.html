@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"HomePage" })
+  @@include('html/_head.htm',{ "title":"Common Steps" })
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
@@ -8,7 +8,7 @@
         <section class="hero">
           <div class="hero__container">
             <h2 class="hero__title-mobile title-hero _anim-items">
-              Проект психологічної допомоги AnimaSana
+              Проект психологічної допомоги "Спільні кроки"
             </h2>
             <div class="hero__deco-image">
               <img src="@img/deco.png" class="hero__deco-img" alt="" />
@@ -24,17 +24,17 @@
               />
               <div class="top-hero__content _anim-items">
                 <h1 class="top-hero__title title-hero _anim-items">
-                  Проект психологічної допомоги AnimaSana
+                  Проект психологічної допомоги "Спільні кроки"
                 </h1>
                 <p class="top-hero__text _anim-items">
-                  AnimaSana — благодійний проект, створений з метою надання
+                  "Спільні кроки" — благодійний проект, створений з метою надання
                   доступної та якісної психологічної підтримки всім, хто шукає
                   розв'язання емоційних проблем, покращення психічного здоров'я
                   та досягнення особистісного розвитку. Ми віримо в важливість
                   психологічного благополуччя кожної людини і працюємо для того,
                   щоб кожен відчував підтримку у важких моментах життя.
                 </p>
-                <a href="#" class="top-hero__btn btn btn-35 _anim-items"
+                <a href="#" data-popup="#popup" class="top-hero__btn btn btn-35 _anim-items"
                   ><span class="btn-35__text">Зв'язатися з нами</span
                   ><span class="btn-35__waves"></span
                 ></a>
@@ -222,9 +222,9 @@
               Зв'яжіться з нами щодо наступні питання
             </h2>
             <!-- Оболонка слайдера -->
-            <div class="contactUs__slider swiper _anim-items">
+            <div class="contactUs__slider swiper ">
               <!-- Частина слайдера, що рухається -->
-              <div class="contactUs__wrapper swiper-wrapper">
+              <div class="contactUs__wrapper swiper-wrapper _anim-items">
                 <!-- Слайд -->
                 <div class="contactUs__slide swiper-slide">
                   <div class="contactUs__item">
@@ -287,7 +287,138 @@
             </div>
           </div>
         </section>
-
+        <section class="team">
+          <div class="team__container">
+            <h2 class="team__title title">Наша команда спеціалістів</h2>
+            <ul class="team__list">
+              <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li> <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li> <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li> <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li> <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li> <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li>
+			  <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li>
+			  <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li>
+			  <li>
+                <div class="team__item item-team">
+                  <div class="item-team__img-wrap">
+                    <img src="@img/team/natalia-pichalina.jpg" alt="Image" />
+                  </div>
+                  <div class="item-team__content">
+                    <h3 class="item-team__name">Наталiя Пiщалiна</h3>
+                    <p class="item-team__specialty">Психолог-консультант</p>
+                    <span class="item-team__lang-label">Languages</span>
+                    <p class="item-team__languages">Українська, Російська</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section class="members">
           <div class="members__container">
             <h2 class="members__title title _anim-items">
@@ -496,7 +627,7 @@
                     <div class="slide-reviews__content">
                       <div class="slide-reviews__image">
                         <img
-                          src="@img/reviews/1.jpg"
+                          src="@img/reviews/girl.png"
                           class="slide-reviews__img"
                           alt="user photo"
                         />
@@ -515,7 +646,7 @@
                     <div class="slide-reviews__content">
                       <div class="slide-reviews__image">
                         <img
-                          src="@img/reviews/2.jpg"
+                          src="@img/reviews/men.png"
                           class="slide-reviews__img"
                           alt="user photo"
                         />
@@ -534,7 +665,7 @@
                     <div class="slide-reviews__content">
                       <div class="slide-reviews__image">
                         <img
-                          src="@img/reviews/3.jpg"
+                          src="@img/reviews/girl.png"
                           class="slide-reviews__img"
                           alt="user photo"
                         />
@@ -553,7 +684,7 @@
                     <div class="slide-reviews__content">
                       <div class="slide-reviews__image">
                         <img
-                          src="@img/reviews/4.jpg"
+                          src="@img/reviews/men.png"
                           class="slide-reviews__img"
                           alt="user photo"
                         />
@@ -572,7 +703,7 @@
                     <div class="slide-reviews__content">
                       <div class="slide-reviews__image">
                         <img
-                          src="@img/reviews/5.jpg"
+                          src="@img/reviews/girl.png"
                           class="slide-reviews__img"
                           alt="user photo"
                         />
