@@ -211,8 +211,8 @@ body {
 
         &._anim-items {
             opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateX(-150px);
+            transition: all 0.4s ease 0s;
+            transform: translateX(-50px);
 
             &._active {
                 opacity: 1;
@@ -235,8 +235,8 @@ body {
 
         &._anim-items {
             opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateX(-150px);
+            transition: all 0.4s ease 0s;
+            transform: translateX(-50px);
 
             &._active {
                 opacity: 1;
@@ -258,8 +258,8 @@ body {
     &__btn {
         &._anim-items {
             opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateX(-150px);
+            transition: all 0.4s ease 0s;
+            transform: translateX(-50px);
 
             &._active {
                 opacity: 1;
@@ -268,27 +268,7 @@ body {
         }
 
         display: inline-block;
-        padding: toRem(18)toRem(36);
-        // background: #04d3fd;
-        // border-radius: 7px;
-
-        // font-weight: 500;
-        // font-size: toRem(20);
-        // line-height: math.div(24, 20);
-
-        // color: #002a46;
-        // box-shadow: 0px 0px 2px #05b1d3a4, inset 0px 0px 1px #0f6f82b8;
-        // transition: box-shadow 0.4s ease;
-
-        @media (max-width: $mobile) {
-            font-size: toRem(18);
-            padding: toRem(18)toRem(26);
-        }
-
-        @media (max-width: $mobileSmall) {
-            font-size: toRem(16);
-            padding: toRem(16)toRem(16);
-        }
+       
 
         // &:hover {
         //     box-shadow: 2px 4px 10px #05b1d3a4, inset 3px 4px 6px #0f6f82b8;
@@ -307,8 +287,8 @@ body {
 
         &._anim-items {
             opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateX(150px);
+            transition: all 0.4s ease 0s;
+            transform: translateX(50px);
 
             &._active {
                 opacity: 1;
@@ -719,7 +699,7 @@ body {
         &._anim-items {
             opacity: 0;
             transition: all 0.6s ease 0s;
-            transform: translateY(50px);
+            transform: translateY(-30px);
 
             &._active {
                 opacity: 1;
@@ -747,8 +727,8 @@ body {
         &._anim-items {
             p{
                    opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateY(50px);
+            transition: all 0.4s ease 0s;
+            transform: translateY(-50px);
             }
          
 
@@ -766,8 +746,17 @@ body {
         font-size: toRem(36);
         text-align: center;
         margin-bottom: toRem(40);
+        &._anim-items {
+            opacity: 0;
+            transition: all 0.4s ease 0s;
+            transform: translateY(-50px);
 
-
+         
+            &._active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     }
 
     &__list {
@@ -794,7 +783,7 @@ overflow: hidden;
             &._anim-items {
                 opacity: 0;
                 transition: all 0.4s ease 0s;
-                transform: translateY(200px);
+                transform: translateY(-100px);
 
                 &:nth-child(2) {
                     transition: all 0.5s ease 0s;
@@ -901,8 +890,8 @@ overflow: hidden;
 
         &._anim-items {
             opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateY(50px);
+            transition: all 0.4s ease 0s;
+            transform: translateY(-50px);
 
             &._active {
                 opacity: 1;
@@ -920,7 +909,7 @@ overflow: hidden;
     &__wrapper {  &._anim-items {
             opacity: 0;
             transition: all 0.5s ease 0s;
-            transform: translateY(150px);
+            transform: translateY(-100px);
 
             &._active {
                 opacity: 1;
@@ -1034,8 +1023,8 @@ overflow: hidden;
 
         &._anim-items {
             opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateY(50px);
+            transition: all 0.4s ease 0s;
+            transform: translateY(-50px);
 
             &._active {
                 opacity: 1;
@@ -1053,8 +1042,8 @@ overflow: hidden;
 
         &._anim-items {
             opacity: 0;
-            transition: all 0.6s ease 0s;
-            transform: translateY(50px);
+            transition: all 0.4s ease 0s;
+            transform: translateY(-50px);
 
             &._active {
                 opacity: 1;
@@ -1095,7 +1084,7 @@ overflow: hidden;
         &._anim-items {
             opacity: 0;
             transition: all 0.4s ease 0s;
-            transform: translateY(150px);
+            transform: translateY(-50px);
 
             &._active {
                 opacity: 1;
@@ -1129,8 +1118,8 @@ overflow: hidden;
         margin-bottom: toRem(32);
         &._anim-items{
             opacity: 0;
-            transition: all 0.6s ease 0s;
-                 transform: translateY(50px);
+            transition: all 0.4s ease 0s;
+                 transform: translateY(-50px);
                  
                  &._active{
                      opacity: 1;
@@ -1143,10 +1132,10 @@ overflow: hidden;
         &__item {
             &._anim-items{
                 opacity: 0;
-                transition: all 0.6s ease 0s;
-                     transform: translateX(-50px);
+                transition: all 0.4s ease 0s;
+                     transform: translateX(-30px);
                      &:nth-child(even){
-                        transform: translateX(50px);
+                        transform: translateX(30px);
                      }
                      &._active{
                          opacity: 1;
@@ -1536,6 +1525,7 @@ overflow: hidden;
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
+        margin-bottom: toRem(30);
         li{
             flex: 20%;
         }
@@ -1543,6 +1533,10 @@ overflow: hidden;
 
     &__item {
         
+    }
+    &__btn{
+      margin: 0 auto;
+      padding: toRem(10)toRem(36);
     }
 }
 
@@ -1560,6 +1554,7 @@ padding-bottom: toRem(20);
 box-shadow: 2px 2px 1px 1px var(--color-3), inset 3px 2px 2px 2px var(--color-2);
 
 aspect-ratio: 3/4;
+margin-bottom: toRem(20);
 &:after {
     content: '';
     top: -100%;

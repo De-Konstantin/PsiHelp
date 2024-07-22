@@ -21,7 +21,7 @@ html.dark{
     --body-bg: #0a1a36;
 
     --color: #043A5D;
-    --color-2: #3f5f9b;
+    --color-2: #3a5d9e;
     --color-3: #065779;
     --color-label: #5b7596;
     --color-Lighting: rgba(51, 64, 212, 0.78);
@@ -184,7 +184,22 @@ html.dark{
 }
 
 //_____________________________________________//
+.btn{
+    
+    display: inline-block;
+    padding: toRem(18)toRem(36);
+   
 
+    @media (max-width: $mobile) {
+        font-size: toRem(18);
+        padding: toRem(18)toRem(26);
+    }
+
+    @media (max-width: $mobileSmall) {
+        font-size: toRem(16);
+        padding: toRem(16)toRem(16);
+    }
+}
 .btn-35 {
 	color: #f1e1c7;
 	font-size: 20px;

@@ -59,7 +59,7 @@ flsFunctions.spollers();
 Документація: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html
 Сніппет (HTML): showmore
 */
-// flsFunctions.showMore();
+flsFunctions.showMore();
 
 /*
 Модуль "До/Після"
@@ -207,7 +207,7 @@ import * as flsScroll from './files/scroll/scroll.js';
 
 // Плавна навігація по сторінці
 // Документація: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
-// flsScroll.pageNavigation();
+flsScroll.pageNavigation();
 
 // Функціонал додавання класів до хедеру під час прокручування
 // Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
