@@ -38,14 +38,14 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
-			//autoHeight: true,
+			autoHeight: true,
 			speed: 800,
 // centeredSlides: true,
 // initialSlide: 1,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
@@ -90,13 +90,13 @@ function initSliders() {
 				},
 				768: {
 					slidesPerView: 3,
-					spaceBetween: 20,
+					
 					
 				},
 			
 				1268: {
 					slidesPerView: 3,
-					spaceBetween: 30,
+					
 				},
 			},
 			

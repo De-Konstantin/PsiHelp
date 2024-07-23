@@ -33,30 +33,20 @@ html.dark{
 }
 
 .title-hero {
-    font-family: "Bebas Neue";
+    font-family: "Ubuntu";
     font-size: toRem(76);
     line-height: 96%;
     /* or 92px */
 
     color: var(--text-color-h);
 
-    @media (max-width: $tablet) {
-        font-size: em(54);
-    }
 
-    @media (max-width: $mobile) {
-        font-size: em(42);
-    }
-
-    @media (max-width: $mobileSmall) {
-        font-size: em(36);
-    }
 }
 
 .title {
     position: relative;
     z-index: 50;
-    font-family: "Bebas Neue";
+    font-family: "Ubuntu";
     font-size: toRem(46);
     line-height: 96%;
     margin-bottom: toRem(20);
@@ -65,16 +55,16 @@ html.dark{
     color: var(--text-color-h);
 
     @media (max-width: $tablet) {
-        font-size: em(54);
+       font-size: toRem(32);
     }
 
-    @media (max-width: $mobile) {
-        font-size: em(42);
-    }
+    // @media (max-width: $mobile) {
+    //     font-size: em(42);
+    // }
 
-    @media (max-width: $mobileSmall) {
-        font-size: em(36);
-    }
+    // @media (max-width: $mobileSmall) {
+    //     font-size: em(36);
+    // }
 }
 
 .text {}

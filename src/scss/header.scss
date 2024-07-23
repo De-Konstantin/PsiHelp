@@ -3,15 +3,15 @@
     background: var(--color);
     z-index: 53;
 
-    &._header-scroll{
+    &._header-scroll {
         position: fixed;
         top: -200%;
         width: 100%;
 
     }
 
-    &._header-show{
-        transition: top 0.3s ease 0s;
+    &._header-show {
+        transition: top 0.2s ease 0s;
         top: 0;
     }
 
@@ -26,24 +26,27 @@
     }
 
     &__logo {
-        font-family:  "Pacifico";
+        font-family: "Pacifico";
 
         font-size: toRem(16);
-        
+
         position: relative;
         z-index: 56;
         display: flex;
         align-items: center;
-gap: 6px;
-line-height: 1.1;
-        
+        gap: 6px;
+        line-height: 1.1;
+
     }
-&__logo-img{
-    max-width: toRem(55);
-    img{
-        width: 100%;
+
+    &__logo-img {
+        max-width: toRem(55);
+
+        img {
+            width: 100%;
+        }
     }
-}
+
     &__menu {}
 
     &__search-form {}
@@ -60,7 +63,8 @@ line-height: 1.1;
         border-radius: 30px;
         position: relative;
         cursor: pointer;
-z-index: 56;
+        z-index: 56;
+
         &::after {
             content: url("@img/header/sun.svg");
             /* Add in the image. You could also add an icon by the using the icon's unicode (sites like fontawesome.com provide this). */
@@ -88,28 +92,32 @@ z-index: 56;
 .menu {
 
 
-    &__icon {position: relative;
-    z-index: 56;}
+    &__icon {
+        position: relative;
+        z-index: 56;
+    }
 
     &__body {
         display: flex;
         align-items: center;
         gap: 10px;
-@media (max-width:$mobile){
-    z-index: 55;
-     background: var(--body-bg);
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: toRem(90);
-}
+
+        @media (max-width:$mobile) {
+            z-index: 55;
+            background: var(--body-bg);
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: toRem(90);
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
         gap: 15px;
-        @media (max-width:$mobile){
-             flex-direction: column;
+
+        @media (max-width:$mobile) {
+            flex-direction: column;
 
         }
     }
@@ -119,8 +127,9 @@ z-index: 56;
     &__link {
         font-size: toRem(18);
         font-weight: 600;
-        @media (max-width:$mobile){
-             font-size: toRem(32); 
+
+        @media (max-width:$mobile) {
+            font-size: toRem(32);
         }
     }
 }
@@ -138,9 +147,17 @@ z-index: 56;
 }
 
 .icon-menu {
-    span{background-color: var(--text-color)}
-    &::after{background-color: var(--text-color)}
-    &::before{background-color:var(--text-color)}
+    span {
+        background-color: var(--text-color)
+    }
+
+    &::after {
+        background-color: var(--text-color)
+    }
+
+    &::before {
+        background-color: var(--text-color)
+    }
 }
 
 
@@ -162,7 +179,8 @@ z-index: 56;
 // }}
 //_______________LANG__________________________//
 .lang {
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
+    /* Adjust width as needed */
     padding: 5px;
 
     -webkit-appearance: none;
@@ -170,7 +188,7 @@ z-index: 56;
     appearance: none;
     // background: url('path/to/arrow.png') no-repeat right center;
     background-size: 10px;
-    padding-right: 20px; 
+    padding-right: 20px;
 
 
 

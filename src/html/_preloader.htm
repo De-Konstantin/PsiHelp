@@ -34,8 +34,23 @@
 						padding: 0.93rem;
 						max-width: 31.25rem;
 						display: flex;
+						gap: 50px;
 						flex-direction: column;
+						justify-content: center;
+text-align: center;
+align-items: center;
 					}
+
+
+					.fls-preloader__logo-img{
+					max-width:700px;
+					width:30vw;
+					margin-bottom: 50px;overflow: hidden;
+border-radius: 50%;
+
+					}
+					.fls-preloader__logo-img img{
+					width:100%}
 					/* Блок з лічильником */
 					.fls-preloader__counter{
 						font-size: 2rem;
@@ -48,13 +63,14 @@
 						display: inline-block;
 						transition: width 0.2s ease;
 						height: 0.8rem;
-						background-color: #7A956B;
+						background-color: #bd853d;
 					}
 					.lock body{
 						overflow: hidden;
 						touch-action: none;
 						overscroll-behavior: none;
 					}
+
 					.loading body>*:not(.fls-preloader){
 						opacity: 0;
 						visibility: hidden;
@@ -71,7 +87,9 @@
 				const preloaderTemplate =`
 					<div class="fls-preloader">
 						<div class="fls-preloader__body">
-							<div class="fls-preloader__counter">0%</div>
+ <div class="fls-preloader__logo-img"><img src="@img/logo5.png" alt="Image">
+      </div>
+							
 							<div class="fls-preloader__line"><span></span></div>
 						</div>
 					</div>`;
