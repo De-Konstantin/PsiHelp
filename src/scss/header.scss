@@ -23,6 +23,10 @@
         justify-content: space-between;
         align-items: center;
         gap: 12px;
+        @media (max-width:$tablet){
+            padding-top: toRem(8);
+            padding-bottom: toRem(8);
+        }
     }
 
     &__logo {
@@ -49,10 +53,9 @@
 
     &__menu {}
 
-    &__search-form {}
-
-    &__search {}
-
+  &__checkbox{
+margin-right: 36px;
+  }
     &__select-lang {}
 
     &__button-toggle {
@@ -94,7 +97,11 @@
 
     &__icon {
         position: relative;
+        position: absolute;
         z-index: 56;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-60%);
     }
 
     &__body {
